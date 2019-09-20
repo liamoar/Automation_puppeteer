@@ -28,8 +28,11 @@ const cartObj = require('./addToCartElement');
         await page.waitForSelector('input[id="passwd"]');
         await page.type('input[id="passwd"]',"123Admin@");
 
+        const loginButton=await page.waitForSelector('#SubmitLogin');
+        loginButton.click();
+
         await navigationPromise;
-        cartObj.cartFunction(page);
+        cartObj.cartFunction(page, navigationPromise);
 
     } catch (error) {
         console.log("cart function error is: ",error)
