@@ -1,0 +1,22 @@
+{
+  "name": "automationpratice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liamoar/Automation_puppeteer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liamoar/Automation_puppeteer/issues"
+  },
+  "homepage": "https://github.com/liamoar/Automation_puppeteer#readme",
+  "dependencies": {
+    "puppeteer-autoscroll-down": "^0.1.2"
+  }
+}
