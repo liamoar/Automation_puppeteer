@@ -34,7 +34,7 @@ const cartObj = require('./addToCartElement');
         await navigationPromise;
         cartObj.cartFunction(page, navigationPromise);
 
-        await browser.close()
+       
 
     } catch (error) {
         console.log("cart function error is: ",error)

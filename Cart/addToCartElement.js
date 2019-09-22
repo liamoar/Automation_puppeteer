@@ -54,7 +54,7 @@ module.exports = {
         proceedToCheckout2.click();
 
         navigationPromise
-        await page.waitFor(3000);
+        await page.waitFor(2000);
         const terms = await page.waitForSelector('input[type="checkbox"]');
         terms.click();
         const proceedToCheckout3= await page.waitForSelector('button[name="processCarrier"]');
