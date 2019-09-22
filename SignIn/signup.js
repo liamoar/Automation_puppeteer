@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 const form = require('./Signupform');
-const emaildata= require('../constant');
+//const emaildata= require('../constant');
 //console.log(emaildata);
 
 (async function siginFucton(){
@@ -32,7 +32,7 @@ const emaildata= require('../constant');
         //search for email field
         await page.waitForSelector('#email_create')
         const num= Math.floor((Math.random()*999) + 50);
-        const email = "test"+num+"@gmail.com" 
+        const email = "testmanusers"+num+"@gmail.com" 
         //onst email= await page.type('#email_create','test'+num+'@gmail.com');
         
         await page.evaluate((email)=>{
